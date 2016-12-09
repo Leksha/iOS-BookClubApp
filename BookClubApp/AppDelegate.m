@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "MembersTableViewController.h"
+#import "BookViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +23,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     UINavigationController *navController = [[UINavigationController alloc] init];
+    
+    MembersTableViewController *membersTableVC = [[MembersTableViewController alloc] init];
+    UINavigationController *membersNavController = [[UINavigationController alloc] initWithRootViewController:membersTableVC];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    BookViewController *bookViewController = [[BookViewController alloc] init];
+    tabBarController.viewControllers = @[bookViewController ,membersNavController];
+    
     LoginViewController *loginScreenController = [[LoginViewController alloc] init];
     
+    [navController pushViewController:tabBarController animated:YES];
     [navController pushViewController:loginScreenController animated:YES];
     
     self.window.rootViewController = navController;

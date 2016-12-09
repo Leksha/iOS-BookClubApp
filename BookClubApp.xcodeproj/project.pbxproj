@@ -18,6 +18,14 @@
 		DA4A6A5F1DFAF5C50047834F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4A6A5E1DFAF5C50047834F /* QuartzCore.framework */; };
 		DA4A6A631DFAF6E30047834F /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A621DFAF6E30047834F /* Member.m */; };
 		DA4A6A671DFAFA2B0047834F /* MemberStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A661DFAFA2B0047834F /* MemberStore.m */; };
+		DA4A6A6F1DFAFBB50047834F /* MembersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A6E1DFAFBB50047834F /* MembersTableViewController.m */; };
+		DA4A6A771DFAFEAD0047834F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A761DFAFEAD0047834F /* DetailViewController.m */; };
+		DA4A6A7A1DFAFEEF0047834F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A791DFAFEEF0047834F /* DetailViewController.xib */; };
+		DA4A6A7E1DFB00220047834F /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A7D1DFB00220047834F /* BookViewController.m */; };
+		DA4A6A811DFB00310047834F /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A801DFB00310047834F /* Book.m */; };
+		DA4A6A831DFB003D0047834F /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A821DFB003D0047834F /* BookViewController.xib */; };
+		DA4A6A891DFB06CF0047834F /* MembersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A871DFB06CF0047834F /* MembersTableViewCell.m */; };
+		DA4A6A8A1DFB06CF0047834F /* MembersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A881DFB06CF0047834F /* MembersTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,19 @@
 		DA4A6A621DFAF6E30047834F /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
 		DA4A6A651DFAFA2B0047834F /* MemberStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberStore.h; sourceTree = "<group>"; };
 		DA4A6A661DFAFA2B0047834F /* MemberStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberStore.m; sourceTree = "<group>"; };
+		DA4A6A6D1DFAFBB50047834F /* MembersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersTableViewController.h; sourceTree = "<group>"; };
+		DA4A6A6E1DFAFBB50047834F /* MembersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersTableViewController.m; sourceTree = "<group>"; };
+		DA4A6A751DFAFEAD0047834F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DA4A6A761DFAFEAD0047834F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DA4A6A791DFAFEEF0047834F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		DA4A6A7C1DFB00220047834F /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		DA4A6A7D1DFB00220047834F /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		DA4A6A7F1DFB00310047834F /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		DA4A6A801DFB00310047834F /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		DA4A6A821DFB003D0047834F /* BookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		DA4A6A861DFB06CF0047834F /* MembersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersTableViewCell.h; sourceTree = "<group>"; };
+		DA4A6A871DFB06CF0047834F /* MembersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersTableViewCell.m; sourceTree = "<group>"; };
+		DA4A6A881DFB06CF0047834F /* MembersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +99,11 @@
 				DA4A6A3F1DFAF35A0047834F /* AppDelegate.h */,
 				DA4A6A401DFAF35A0047834F /* AppDelegate.m */,
 				DA4A6A481DFAF35A0047834F /* Assets.xcassets */,
+				DA4A6A7B1DFB00090047834F /* Book */,
 				DA4A6A581DFAF38B0047834F /* Login View Controller */,
 				DA4A6A641DFAF6E60047834F /* Member */,
-				DA4A6A681DFAFA2F0047834F /* MemberStore */,
+				DA4A6A6C1DFAFB5B0047834F /* MembersTableViewController */,
+				DA4A6A781DFAFEB10047834F /* Detail View Controller */,
 			);
 			path = BookClubApp;
 			sourceTree = "<group>";
@@ -128,17 +151,44 @@
 			children = (
 				DA4A6A611DFAF6E30047834F /* Member.h */,
 				DA4A6A621DFAF6E30047834F /* Member.m */,
+				DA4A6A651DFAFA2B0047834F /* MemberStore.h */,
+				DA4A6A661DFAFA2B0047834F /* MemberStore.m */,
 			);
 			name = Member;
 			sourceTree = "<group>";
 		};
-		DA4A6A681DFAFA2F0047834F /* MemberStore */ = {
+		DA4A6A6C1DFAFB5B0047834F /* MembersTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DA4A6A651DFAFA2B0047834F /* MemberStore.h */,
-				DA4A6A661DFAFA2B0047834F /* MemberStore.m */,
+				DA4A6A6D1DFAFBB50047834F /* MembersTableViewController.h */,
+				DA4A6A6E1DFAFBB50047834F /* MembersTableViewController.m */,
+				DA4A6A861DFB06CF0047834F /* MembersTableViewCell.h */,
+				DA4A6A871DFB06CF0047834F /* MembersTableViewCell.m */,
+				DA4A6A881DFB06CF0047834F /* MembersTableViewCell.xib */,
 			);
-			name = MemberStore;
+			name = MembersTableViewController;
+			sourceTree = "<group>";
+		};
+		DA4A6A781DFAFEB10047834F /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A6A751DFAFEAD0047834F /* DetailViewController.h */,
+				DA4A6A761DFAFEAD0047834F /* DetailViewController.m */,
+				DA4A6A791DFAFEEF0047834F /* DetailViewController.xib */,
+			);
+			name = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		DA4A6A7B1DFB00090047834F /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A6A7C1DFB00220047834F /* BookViewController.h */,
+				DA4A6A7D1DFB00220047834F /* BookViewController.m */,
+				DA4A6A821DFB003D0047834F /* BookViewController.xib */,
+				DA4A6A7F1DFB00310047834F /* Book.h */,
+				DA4A6A801DFB00310047834F /* Book.m */,
+			);
+			name = Book;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4A6A7A1DFAFEEF0047834F /* DetailViewController.xib in Resources */,
+				DA4A6A831DFB003D0047834F /* BookViewController.xib in Resources */,
 				DA4A6A4C1DFAF35A0047834F /* LaunchScreen.storyboard in Resources */,
+				DA4A6A8A1DFB06CF0047834F /* MembersTableViewCell.xib in Resources */,
 				DA4A6A491DFAF35A0047834F /* Assets.xcassets in Resources */,
 				DA4A6A471DFAF35A0047834F /* Main.storyboard in Resources */,
 				DA4A6A5A1DFAF3CC0047834F /* LoginViewController.xib in Resources */,
@@ -216,10 +269,15 @@
 			files = (
 				DA4A6A561DFAF3860047834F /* LoginViewController.m in Sources */,
 				DA4A6A441DFAF35A0047834F /* ViewController.m in Sources */,
+				DA4A6A771DFAFEAD0047834F /* DetailViewController.m in Sources */,
+				DA4A6A6F1DFAFBB50047834F /* MembersTableViewController.m in Sources */,
+				DA4A6A811DFB00310047834F /* Book.m in Sources */,
 				DA4A6A411DFAF35A0047834F /* AppDelegate.m in Sources */,
+				DA4A6A7E1DFB00220047834F /* BookViewController.m in Sources */,
 				DA4A6A671DFAFA2B0047834F /* MemberStore.m in Sources */,
 				DA4A6A3E1DFAF35A0047834F /* main.m in Sources */,
 				DA4A6A631DFAF6E30047834F /* Member.m in Sources */,
+				DA4A6A891DFB06CF0047834F /* MembersTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
