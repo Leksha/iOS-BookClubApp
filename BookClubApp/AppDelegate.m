@@ -11,6 +11,7 @@
 #import "MembersTableViewController.h"
 #import "BookViewController.h"
 #import "IconsCollectionViewController.h"
+#import "WinningViewController.h"
 
 @interface AppDelegate ()
 
@@ -30,7 +31,8 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     BookViewController *bookViewController = [[BookViewController alloc] init];
-    tabBarController.viewControllers = @[bookViewController ,membersNavController];
+    WinningViewController *winningController = [[WinningViewController alloc] init];
+    tabBarController.viewControllers = @[bookViewController ,membersNavController, winningController];
     
     LoginViewController *loginScreenController = [[LoginViewController alloc] init];
     

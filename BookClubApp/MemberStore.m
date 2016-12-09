@@ -7,10 +7,13 @@
 //
 
 #import "MemberStore.h"
+#import "WinningViewController.h"
 
 @interface MemberStore ()
 
 @property (nonatomic) NSMutableArray *privateMembers;
+@property (nonatomic) int maxScore;
+
 
 @end
 
@@ -44,6 +47,7 @@
         
         // If the aray hadn't been saved previously, create a new empty one
         if (!_privateMembers) {
+            _maxScore = 0;
             _privateMembers = [[NSMutableArray alloc] init];
         }
     }
@@ -101,6 +105,13 @@
                                        toFile:path];
 }
 
-
+- (void)updateWinner {
+    for (int i=0; i<self.privateMembers.count; i++){
+        Member *mem = _privateMembers[i];
+        if (mem.numberOfChaptersRead > _maxScore) {
+            _maxScore = mem.numberOfChaptersRead;
+        }
+    }
+}
 
 @end

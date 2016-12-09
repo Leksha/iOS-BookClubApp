@@ -30,6 +30,8 @@
 		DA4A6AA41DFB17090047834F /* IconsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AA21DFB17090047834F /* IconsCollectionViewController.m */; };
 		DA860EA11DFB2C02001CB645 /* IconsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA860E9F1DFB2C02001CB645 /* IconsCollectionViewCell.m */; };
 		DA860EA21DFB2C02001CB645 /* IconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA860EA01DFB2C02001CB645 /* IconsCollectionViewCell.xib */; };
+		DA860EB31DFB3EC7001CB645 /* WinningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA860EB11DFB3EC7001CB645 /* WinningViewController.m */; };
+		DA860EB41DFB3EC7001CB645 /* WinningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA860EB21DFB3EC7001CB645 /* WinningViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,9 @@
 		DA860E9E1DFB2C02001CB645 /* IconsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsCollectionViewCell.h; sourceTree = "<group>"; };
 		DA860E9F1DFB2C02001CB645 /* IconsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsCollectionViewCell.m; sourceTree = "<group>"; };
 		DA860EA01DFB2C02001CB645 /* IconsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconsCollectionViewCell.xib; sourceTree = "<group>"; };
+		DA860EB01DFB3EC7001CB645 /* WinningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningViewController.h; sourceTree = "<group>"; };
+		DA860EB11DFB3EC7001CB645 /* WinningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningViewController.m; sourceTree = "<group>"; };
+		DA860EB21DFB3EC7001CB645 /* WinningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinningViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +121,7 @@
 				DA4A6A6C1DFAFB5B0047834F /* MembersTableViewController */,
 				DA4A6A781DFAFEB10047834F /* Detail View Controller */,
 				DA4A6A911DFB0DE60047834F /* IconsCollectionVC */,
+				DA860EAF1DFB3E83001CB645 /* Winnig Dashboard */,
 			);
 			path = BookClubApp;
 			sourceTree = "<group>";
@@ -217,6 +223,16 @@
 			name = IconsCollectionVC;
 			sourceTree = "<group>";
 		};
+		DA860EAF1DFB3E83001CB645 /* Winnig Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				DA860EB01DFB3EC7001CB645 /* WinningViewController.h */,
+				DA860EB11DFB3EC7001CB645 /* WinningViewController.m */,
+				DA860EB21DFB3EC7001CB645 /* WinningViewController.xib */,
+			);
+			name = "Winnig Dashboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA860EB41DFB3EC7001CB645 /* WinningViewController.xib in Resources */,
 				DA4A6A7A1DFAFEEF0047834F /* DetailViewController.xib in Resources */,
 				DA4A6A831DFB003D0047834F /* BookViewController.xib in Resources */,
 				DA4A6A4C1DFAF35A0047834F /* LaunchScreen.storyboard in Resources */,
@@ -299,6 +316,7 @@
 				DA4A6A441DFAF35A0047834F /* ViewController.m in Sources */,
 				DA4A6A771DFAFEAD0047834F /* DetailViewController.m in Sources */,
 				DA4A6A6F1DFAFBB50047834F /* MembersTableViewController.m in Sources */,
+				DA860EB31DFB3EC7001CB645 /* WinningViewController.m in Sources */,
 				DA4A6AA41DFB17090047834F /* IconsCollectionViewController.m in Sources */,
 				DA4A6A811DFB00310047834F /* Book.m in Sources */,
 				DA860EA11DFB2C02001CB645 /* IconsCollectionViewCell.m in Sources */,

@@ -74,6 +74,7 @@
     self.member.numberOfChaptersRead = [_numberOfChaptersReadTextField.text intValue];
     self.member.thumbnail = _iconImage.image;
 //    [[MemberStore sharedStore] updateWinnerWithNewMember:self.member];
+    [[MemberStore sharedStore] allMembers];
     [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
 
