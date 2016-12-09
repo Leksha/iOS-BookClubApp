@@ -94,6 +94,7 @@
     Member *member = members[indexPath.row];
     cell.nameLabel.text = [NSString stringWithFormat:@"%@", member.firstName];
     cell.numberLabel.text = [NSString stringWithFormat:@"%i", member.numberOfChaptersRead];
+    cell.iconImage.image = member.thumbnail;
     return cell;
 }
 

@@ -15,8 +15,6 @@
     [super awakeFromNib];
     // Initialization code
 }
-- (IBAction)selectIcon:(id)sender {
-    self.member.thumbnail = self.iconImage.image;
-}
+
 
 @end

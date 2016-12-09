@@ -16,29 +16,38 @@
                 <frame key="frameInset" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUc-Su-GdS">
-                        <constraints>
-                            <constraint firstAttribute="width" constant="42" id="6Jb-pJ-h6w"/>
-                            <constraint firstAttribute="height" constant="21" id="sxT-aJ-0YP"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sd-MQ-a7W">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sd-MQ-a7W">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-8M-U4M">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="bI1-AD-yA3"/>
+                            <constraint firstAttribute="height" constant="44" id="w4Q-A5-tw9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUc-Su-GdS">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="188" id="eW2-fn-4aF"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="o9m-8M-U4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="4Va-et-wZY"/>
                     <constraint firstAttribute="trailingMargin" secondItem="1Sd-MQ-a7W" secondAttribute="trailing" constant="5" id="GK4-ij-uUm"/>
-                    <constraint firstItem="iUc-Su-GdS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="42" id="Zu3-rK-8UG"/>
-                    <constraint firstItem="iUc-Su-GdS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="eS5-jT-zgQ"/>
+                    <constraint firstItem="1Sd-MQ-a7W" firstAttribute="leading" secondItem="iUc-Su-GdS" secondAttribute="trailing" constant="24.5" id="dOS-Vo-d7X"/>
+                    <constraint firstItem="iUc-Su-GdS" firstAttribute="leading" secondItem="o9m-8M-U4M" secondAttribute="trailing" constant="6" id="fV5-3z-WHg"/>
+                    <constraint firstItem="iUc-Su-GdS" firstAttribute="centerY" secondItem="o9m-8M-U4M" secondAttribute="centerY" id="gQ8-1Y-e6j"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="o9m-8M-U4M" secondAttribute="leading" id="jiz-d3-RwE"/>
                     <constraint firstItem="1Sd-MQ-a7W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kv7-gM-Ks4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="iconImage" destination="o9m-8M-U4M" id="mG2-nU-sA7"/>
                 <outlet property="nameLabel" destination="iUc-Su-GdS" id="EZY-tp-HoI"/>
                 <outlet property="numberLabel" destination="1Sd-MQ-a7W" id="fWG-1b-rde"/>
             </connections>
