@@ -17,6 +17,7 @@
 		DA4A6A5A1DFAF3CC0047834F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A591DFAF3CC0047834F /* LoginViewController.xib */; };
 		DA4A6A5F1DFAF5C50047834F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4A6A5E1DFAF5C50047834F /* QuartzCore.framework */; };
 		DA4A6A631DFAF6E30047834F /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A621DFAF6E30047834F /* Member.m */; };
+		DA4A6A671DFAFA2B0047834F /* MemberStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A661DFAFA2B0047834F /* MemberStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		DA4A6A5E1DFAF5C50047834F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DA4A6A611DFAF6E30047834F /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		DA4A6A621DFAF6E30047834F /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		DA4A6A651DFAFA2B0047834F /* MemberStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberStore.h; sourceTree = "<group>"; };
+		DA4A6A661DFAFA2B0047834F /* MemberStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +73,14 @@
 		DA4A6A3B1DFAF35A0047834F /* BookClubApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A6A3C1DFAF35A0047834F /* Supporting Files */,
+				DA4A6A601DFAF6C20047834F /* Stuff */,
 				DA4A6A3F1DFAF35A0047834F /* AppDelegate.h */,
 				DA4A6A401DFAF35A0047834F /* AppDelegate.m */,
 				DA4A6A481DFAF35A0047834F /* Assets.xcassets */,
 				DA4A6A581DFAF38B0047834F /* Login View Controller */,
 				DA4A6A641DFAF6E60047834F /* Member */,
-				DA4A6A3C1DFAF35A0047834F /* Supporting Files */,
-				DA4A6A601DFAF6C20047834F /* Stuff */,
+				DA4A6A681DFAFA2F0047834F /* MemberStore */,
 			);
 			path = BookClubApp;
 			sourceTree = "<group>";
@@ -126,6 +130,15 @@
 				DA4A6A621DFAF6E30047834F /* Member.m */,
 			);
 			name = Member;
+			sourceTree = "<group>";
+		};
+		DA4A6A681DFAFA2F0047834F /* MemberStore */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A6A651DFAFA2B0047834F /* MemberStore.h */,
+				DA4A6A661DFAFA2B0047834F /* MemberStore.m */,
+			);
+			name = MemberStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +217,7 @@
 				DA4A6A561DFAF3860047834F /* LoginViewController.m in Sources */,
 				DA4A6A441DFAF35A0047834F /* ViewController.m in Sources */,
 				DA4A6A411DFAF35A0047834F /* AppDelegate.m in Sources */,
+				DA4A6A671DFAFA2B0047834F /* MemberStore.m in Sources */,
 				DA4A6A3E1DFAF35A0047834F /* main.m in Sources */,
 				DA4A6A631DFAF6E30047834F /* Member.m in Sources */,
 			);
