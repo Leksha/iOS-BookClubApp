@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *numberOfChaptersReadTextField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 
 @end
 
@@ -35,6 +36,7 @@
     self.firstNameTextField.text = member.firstName;
     self.lastNameTextField.text = member.lastName;
     self.numberOfChaptersReadTextField.text = [NSString stringWithFormat:@"%d", member.numberOfChaptersRead];
+    self.iconImage.image = member.thumbnail;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,7 +72,7 @@
     self.member.firstName = _firstNameTextField.text;
     self.member.lastName = _lastNameTextField.text;
     self.member.numberOfChaptersRead = [_numberOfChaptersReadTextField.text intValue];
-    
+    self.member.thumbnail = _iconImage.image;
 //    [[MemberStore sharedStore] updateWinnerWithNewMember:self.member];
     [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
@@ -95,7 +97,9 @@
     [flowLayout setItemSize:CGSizeMake(100, 100)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
-    IconsCollectionViewController *iconsCollectionVC = [[IconsCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    IconsCollectionViewController *iconsCollectionVC = [[IconsCollectionViewController alloc]
+                                                        initWithCollectionViewLayout:flowLayout];
+    iconsCollectionVC.member = self.member;
     iconsCollectionVC.modalPresentationStyle = UIModalPresentationPopover;
     UIPopoverPresentationController *popController = [iconsCollectionVC popoverPresentationController];
     popController.permittedArrowDirections = UIPopoverArrowDirectionAny;
@@ -106,5 +110,8 @@
 
 }
 
+- (void)iconSelected:(UIImage *)iconSelected {
+    self.iconImage.image = iconSelected;
+}
 
 @end

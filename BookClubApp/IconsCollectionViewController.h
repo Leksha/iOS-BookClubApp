@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Member.h"
 
 @interface IconsCollectionViewController : UICollectionViewController
 
 @property (nonatomic, strong) NSArray *dataSource;
+
+@property (nonatomic, strong) Member *member;
 
 @end

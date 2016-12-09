@@ -59,6 +59,14 @@
     return _numberOfChaptersRead;
 }
 
+- (void)setThumbnail:(UIImage *)image {
+    _thumbnail = image;
+}
+
+- (UIImage *)thumbnail {
+    return _thumbnail;
+}
+
 #pragma mark - Encoding
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -66,7 +74,7 @@
     if (self) {
         _firstName = [aDecoder decodeObjectForKey:@"firstName"];
         _lastName = [aDecoder decodeObjectForKey:@"lastNumber"];
-        _thumbnail = [aDecoder decodeObjectForKey:@"thumbnail"];
+        self.thumbnail = [aDecoder decodeObjectForKey:@"thumbnail"];
         _numberOfChaptersRead = [aDecoder decodeIntForKey:@"chapters"];
     }
     return self;
@@ -75,10 +83,9 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:_firstName forKey:@"firstName"];
     [aCoder encodeObject:_lastName forKey:@"lastNumber"];
-    [aCoder encodeObject:_thumbnail forKey:@"thumbnail"];
+    [aCoder encodeObject:self.thumbnail forKey:@"thumbnail"];
     [aCoder encodeInt:_numberOfChaptersRead forKey:@"chapters"];
 }
-
 
 
 @end

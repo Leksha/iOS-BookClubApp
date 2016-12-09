@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Member.h"
 
 @interface IconsCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic) Member *member;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 
 @end

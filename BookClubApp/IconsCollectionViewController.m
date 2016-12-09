@@ -9,6 +9,7 @@
 #import "IconsCollectionViewController.h"
 #import "IconsCollectionViewCell.h"
 #import "IconsStore.h"
+#import "MemberStore.h"
 
 @interface IconsCollectionViewController ()
 
@@ -76,12 +77,18 @@ static NSString * const reuseIdentifier = @"Cell";
     // Configure the cell
     
     cell.iconImage.image = self.dataSource[indexPath.row];
+    cell.member = self.member;
 //    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    self.member.thumbnail = self.dataSource[indexPath.row];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking

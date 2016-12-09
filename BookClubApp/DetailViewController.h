@@ -17,4 +17,6 @@
 
 @property (nonatomic, copy) void (^dismissBlock)(void);
 
+- (void)iconSelected:(UIImage *)iconSelected;
+
 @end

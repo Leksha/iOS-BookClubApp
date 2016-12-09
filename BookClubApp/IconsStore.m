@@ -46,7 +46,8 @@
         if (!_privateIcons) {
             _privateIcons = [[NSMutableArray alloc] init];
             _privateIcons = @[ [UIImage imageNamed:@"pikachuIcon"],
-                               [UIImage imageNamed:@"togepiIcon"]
+                               [UIImage imageNamed:@"togepiIcon"],
+                               [UIImage imageNamed:@"starIcon"]
                                ];
         }
     }

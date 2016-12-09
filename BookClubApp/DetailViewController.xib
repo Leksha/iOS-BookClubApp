@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="cameraButton" destination="B0k-Mo-I3b" id="i6f-x5-vpb"/>
                 <outlet property="firstNameTextField" destination="N81-pO-ZD3" id="Wio-zu-4cg"/>
+                <outlet property="iconImage" destination="xh5-Am-wgg" id="R4Y-8U-W5V"/>
                 <outlet property="lastNameTextField" destination="4Ih-lu-DEe" id="xHc-w2-sKn"/>
                 <outlet property="numberOfChaptersReadTextField" destination="P67-av-Run" id="JVX-Vb-f7Q"/>
                 <outlet property="view" destination="iN0-l3-epB" id="G6r-X2-4Wj"/>

@@ -16,12 +16,21 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4QI-jx-fRc"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-O2-8Qn">
+                        <connections>
+                            <action selector="selectIcon:" destination="gTV-IL-0wX" eventType="touchUpInside" id="1Hu-If-pfh"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="FfZ-O2-8Qn" secondAttribute="bottom" id="BFW-s6-xYg"/>
                 <constraint firstItem="4QI-jx-fRc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ERV-he-WA8"/>
                 <constraint firstItem="4QI-jx-fRc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ess-4J-anB"/>
+                <constraint firstItem="FfZ-O2-8Qn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b4D-BV-8dg"/>
                 <constraint firstAttribute="bottom" secondItem="4QI-jx-fRc" secondAttribute="bottom" id="c6D-pz-txx"/>
+                <constraint firstAttribute="trailing" secondItem="FfZ-O2-8Qn" secondAttribute="trailing" id="hhd-2L-yBE"/>
+                <constraint firstItem="FfZ-O2-8Qn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iNP-Yt-dNA"/>
                 <constraint firstAttribute="trailing" secondItem="4QI-jx-fRc" secondAttribute="trailing" id="vbB-6f-XcK"/>
             </constraints>
             <connections>

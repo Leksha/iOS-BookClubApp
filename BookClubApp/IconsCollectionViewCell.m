@@ -7,12 +7,16 @@
 //
 
 #import "IconsCollectionViewCell.h"
+#import "DetailViewController.h"
 
 @implementation IconsCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+}
+- (IBAction)selectIcon:(id)sender {
+    self.member.thumbnail = self.iconImage.image;
 }
 
 @end

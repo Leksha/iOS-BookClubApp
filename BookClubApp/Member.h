@@ -14,10 +14,10 @@
     NSString *_firstName;;
     NSString *_lastName;
     int _numberOfChaptersRead;
+    UIImage *_thumbnail;
 }
 
 @property (nonatomic, copy) NSString *memberId;
-@property (nonatomic, strong) UIImage *thumbnail;
 
 - (instancetype)initWithName:(NSString *)first last:(NSString *)last;
 
@@ -29,5 +29,8 @@
 
 - (void)setNumberOfChaptersRead:(int)str;
 - (int)numberOfChaptersRead;
+
+- (void)setThumbnail:(UIImage *)image;
+- (UIImage *)thumbnail;
 
 @end
