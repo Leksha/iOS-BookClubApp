@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *winningMember;
 @property (nonatomic, strong) Member *member;
+@property (weak, nonatomic) IBOutlet UILabel *winningChapters;
 
 @end

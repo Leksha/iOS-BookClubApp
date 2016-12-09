@@ -8,6 +8,7 @@
 
 #import "WinningViewController.h"
 #import "WinningStore.h"
+#import "Book.h"
 
 @interface WinningViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *dancingWinner;
@@ -27,7 +28,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [[WinningStore sharedStore] updateWinnerWithMember:self.member];
-    self.winningMember.text = [WinningStore sharedStore].member.firstName;
+    Member *mem = [WinningStore sharedStore].member;
+    self.winningMember.text = mem.firstName;
+    self.winningChapters.text = [NSString stringWithFormat:@"%i / %i", mem.numberOfChaptersRead, [Book sharedStore].bookChapters];
 }
 
 - (void)viewDidLoad {
