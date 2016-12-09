@@ -47,7 +47,12 @@
             _privateIcons = [[NSMutableArray alloc] init];
             _privateIcons = @[ [UIImage imageNamed:@"pikachuIcon"],
                                [UIImage imageNamed:@"togepiIcon"],
-                               [UIImage imageNamed:@"starIcon"]
+                               [UIImage imageNamed:@"starIcon"],
+                               [UIImage imageNamed:@"pokemon1"],
+                               [UIImage imageNamed:@"pokemon2"],
+                               [UIImage imageNamed:@"pokemon3"],
+                               [UIImage imageNamed:@"pokemon5"],
+                               [UIImage imageNamed:@"pokemon6"]
                                ];
         }
     }

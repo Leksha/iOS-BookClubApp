@@ -26,7 +26,7 @@
     if (self) {
         _currentBook = [Book sharedStore];
         self.tabBarItem.title = @"Book Details";
-        self.tabBarItem.image = [UIImage imageNamed:@"bookIcon"];
+        self.tabBarItem.image = [UIImage imageNamed:@"bookImage"];
         _firstLaunch = true;
     }
     return self;
