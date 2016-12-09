@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="goButton" destination="hvJ-oG-LYb" id="zfV-Ub-336"/>
+                <outlet property="loginField" destination="vNW-hm-d5R" id="ySF-lr-JDw"/>
+                <outlet property="passwordField" destination="lRM-qW-o2g" id="D44-bX-Kdr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="aSr-GV-7OG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watercolorSplach_blue" translatesAutoresizingMaskIntoConstraints="NO" id="QBS-7e-yqU"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNW-hm-d5R">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRM-qW-o2g">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvJ-oG-LYb">
+                    <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="m9v-CS-VNH"/>
+                        <constraint firstAttribute="width" constant="46" id="zfY-DX-vOd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="Go">
+                        <color key="titleColor" red="0.063963450491428375" green="0.20005986094474792" blue="0.21721076965332031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goButtonClicked:" destination="-1" eventType="touchUpInside" id="8Z9-P5-B5f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vNW-hm-d5R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="97" id="1yH-zK-DaD"/>
+                <constraint firstAttribute="bottom" secondItem="QBS-7e-yqU" secondAttribute="bottom" constant="20" id="7EU-ST-ikZ"/>
+                <constraint firstItem="lRM-qW-o2g" firstAttribute="top" secondItem="vNW-hm-d5R" secondAttribute="bottom" constant="21" id="AB0-o5-U1Z"/>
+                <constraint firstItem="lRM-qW-o2g" firstAttribute="width" secondItem="vNW-hm-d5R" secondAttribute="width" id="Ouw-e0-zaH"/>
+                <constraint firstItem="QBS-7e-yqU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="SsB-DF-ghc"/>
+                <constraint firstItem="vNW-hm-d5R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="267" id="Tg8-s6-HHp"/>
+                <constraint firstItem="lRM-qW-o2g" firstAttribute="leading" secondItem="vNW-hm-d5R" secondAttribute="leading" id="YjB-TM-WKi"/>
+                <constraint firstAttribute="trailing" secondItem="vNW-hm-d5R" secondAttribute="trailing" constant="97" id="epT-wk-36F"/>
+                <constraint firstItem="vNW-hm-d5R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="etK-nQ-Gqh"/>
+                <constraint firstItem="QBS-7e-yqU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jeK-ar-LXm"/>
+                <constraint firstItem="hvJ-oG-LYb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kME-ct-5Mm"/>
+                <constraint firstItem="hvJ-oG-LYb" firstAttribute="top" secondItem="lRM-qW-o2g" secondAttribute="bottom" constant="38" id="waS-J6-Ikg"/>
+                <constraint firstAttribute="trailing" secondItem="QBS-7e-yqU" secondAttribute="trailing" id="zr6-0d-GLK"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="watercolorSplach_blue" width="564" height="690"/>
+    </resources>
+</document>
