@@ -8,12 +8,14 @@
 
 #import "DetailViewController.h"
 #import "MemberStore.h"
+#import "IconsCollectionViewController.h"
 
 @interface DetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *numberOfChaptersReadTextField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
 
 @end
 
@@ -85,5 +87,24 @@
     
     [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
+
+- (IBAction)selectIcon:(id)sender {
+    
+    // Needs a source type and a delegate
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(100, 100)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    
+    IconsCollectionViewController *iconsCollectionVC = [[IconsCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    iconsCollectionVC.modalPresentationStyle = UIModalPresentationPopover;
+    UIPopoverPresentationController *popController = [iconsCollectionVC popoverPresentationController];
+    popController.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    popController.barButtonItem = _cameraButton;
+    
+//    [self.navigationController presentViewController:iconsCollectionVC animated:YES completion:nil];
+    [self presentViewController:iconsCollectionVC animated:YES completion:nil];
+
+}
+
 
 @end

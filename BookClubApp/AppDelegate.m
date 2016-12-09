@@ -10,6 +10,7 @@
 #import "LoginViewController.h"
 #import "MembersTableViewController.h"
 #import "BookViewController.h"
+#import "IconsCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,6 +34,7 @@
     
     LoginViewController *loginScreenController = [[LoginViewController alloc] init];
     
+
     [navController pushViewController:tabBarController animated:YES];
     [navController pushViewController:loginScreenController animated:YES];
     

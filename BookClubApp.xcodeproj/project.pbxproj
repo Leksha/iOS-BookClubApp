@@ -11,7 +11,6 @@
 		DA4A6A411DFAF35A0047834F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A401DFAF35A0047834F /* AppDelegate.m */; };
 		DA4A6A441DFAF35A0047834F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A431DFAF35A0047834F /* ViewController.m */; };
 		DA4A6A471DFAF35A0047834F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A451DFAF35A0047834F /* Main.storyboard */; };
-		DA4A6A491DFAF35A0047834F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A481DFAF35A0047834F /* Assets.xcassets */; };
 		DA4A6A4C1DFAF35A0047834F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A4A1DFAF35A0047834F /* LaunchScreen.storyboard */; };
 		DA4A6A561DFAF3860047834F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A541DFAF3860047834F /* LoginViewController.m */; };
 		DA4A6A5A1DFAF3CC0047834F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A591DFAF3CC0047834F /* LoginViewController.xib */; };
@@ -26,6 +25,11 @@
 		DA4A6A831DFB003D0047834F /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A821DFB003D0047834F /* BookViewController.xib */; };
 		DA4A6A891DFB06CF0047834F /* MembersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A871DFB06CF0047834F /* MembersTableViewCell.m */; };
 		DA4A6A8A1DFB06CF0047834F /* MembersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A881DFB06CF0047834F /* MembersTableViewCell.xib */; };
+		DA4A6A941DFB0E1C0047834F /* IconsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6A931DFB0E1C0047834F /* IconsStore.m */; };
+		DA4A6A961DFB100D0047834F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4A6A951DFB100D0047834F /* Assets.xcassets */; };
+		DA4A6AA41DFB17090047834F /* IconsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A6AA21DFB17090047834F /* IconsCollectionViewController.m */; };
+		DA860EA11DFB2C02001CB645 /* IconsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA860E9F1DFB2C02001CB645 /* IconsCollectionViewCell.m */; };
+		DA860EA21DFB2C02001CB645 /* IconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA860EA01DFB2C02001CB645 /* IconsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +40,6 @@
 		DA4A6A421DFAF35A0047834F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DA4A6A431DFAF35A0047834F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA4A6A461DFAF35A0047834F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA4A6A481DFAF35A0047834F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA4A6A4B1DFAF35A0047834F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4A6A4D1DFAF35A0047834F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4A6A531DFAF3860047834F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = LoginViewController/LoginViewController.h; sourceTree = "<group>"; };
@@ -60,6 +63,14 @@
 		DA4A6A861DFB06CF0047834F /* MembersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersTableViewCell.h; sourceTree = "<group>"; };
 		DA4A6A871DFB06CF0047834F /* MembersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersTableViewCell.m; sourceTree = "<group>"; };
 		DA4A6A881DFB06CF0047834F /* MembersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersTableViewCell.xib; sourceTree = "<group>"; };
+		DA4A6A921DFB0E1C0047834F /* IconsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsStore.h; sourceTree = "<group>"; };
+		DA4A6A931DFB0E1C0047834F /* IconsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsStore.m; sourceTree = "<group>"; };
+		DA4A6A951DFB100D0047834F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA4A6AA11DFB17090047834F /* IconsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsCollectionViewController.h; sourceTree = "<group>"; };
+		DA4A6AA21DFB17090047834F /* IconsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsCollectionViewController.m; sourceTree = "<group>"; };
+		DA860E9E1DFB2C02001CB645 /* IconsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsCollectionViewCell.h; sourceTree = "<group>"; };
+		DA860E9F1DFB2C02001CB645 /* IconsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsCollectionViewCell.m; sourceTree = "<group>"; };
+		DA860EA01DFB2C02001CB645 /* IconsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,16 +105,17 @@
 		DA4A6A3B1DFAF35A0047834F /* BookClubApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A6A951DFB100D0047834F /* Assets.xcassets */,
 				DA4A6A3C1DFAF35A0047834F /* Supporting Files */,
 				DA4A6A601DFAF6C20047834F /* Stuff */,
 				DA4A6A3F1DFAF35A0047834F /* AppDelegate.h */,
 				DA4A6A401DFAF35A0047834F /* AppDelegate.m */,
-				DA4A6A481DFAF35A0047834F /* Assets.xcassets */,
 				DA4A6A7B1DFB00090047834F /* Book */,
 				DA4A6A581DFAF38B0047834F /* Login View Controller */,
 				DA4A6A641DFAF6E60047834F /* Member */,
 				DA4A6A6C1DFAFB5B0047834F /* MembersTableViewController */,
 				DA4A6A781DFAFEB10047834F /* Detail View Controller */,
+				DA4A6A911DFB0DE60047834F /* IconsCollectionVC */,
 			);
 			path = BookClubApp;
 			sourceTree = "<group>";
@@ -191,6 +203,20 @@
 			name = Book;
 			sourceTree = "<group>";
 		};
+		DA4A6A911DFB0DE60047834F /* IconsCollectionVC */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A6A921DFB0E1C0047834F /* IconsStore.h */,
+				DA4A6A931DFB0E1C0047834F /* IconsStore.m */,
+				DA860E9E1DFB2C02001CB645 /* IconsCollectionViewCell.h */,
+				DA860E9F1DFB2C02001CB645 /* IconsCollectionViewCell.m */,
+				DA860EA01DFB2C02001CB645 /* IconsCollectionViewCell.xib */,
+				DA4A6AA11DFB17090047834F /* IconsCollectionViewController.h */,
+				DA4A6AA21DFB17090047834F /* IconsCollectionViewController.m */,
+			);
+			name = IconsCollectionVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,9 +280,10 @@
 				DA4A6A831DFB003D0047834F /* BookViewController.xib in Resources */,
 				DA4A6A4C1DFAF35A0047834F /* LaunchScreen.storyboard in Resources */,
 				DA4A6A8A1DFB06CF0047834F /* MembersTableViewCell.xib in Resources */,
-				DA4A6A491DFAF35A0047834F /* Assets.xcassets in Resources */,
+				DA4A6A961DFB100D0047834F /* Assets.xcassets in Resources */,
 				DA4A6A471DFAF35A0047834F /* Main.storyboard in Resources */,
 				DA4A6A5A1DFAF3CC0047834F /* LoginViewController.xib in Resources */,
+				DA860EA21DFB2C02001CB645 /* IconsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4A6A941DFB0E1C0047834F /* IconsStore.m in Sources */,
 				DA4A6A561DFAF3860047834F /* LoginViewController.m in Sources */,
 				DA4A6A441DFAF35A0047834F /* ViewController.m in Sources */,
 				DA4A6A771DFAFEAD0047834F /* DetailViewController.m in Sources */,
 				DA4A6A6F1DFAFBB50047834F /* MembersTableViewController.m in Sources */,
+				DA4A6AA41DFB17090047834F /* IconsCollectionViewController.m in Sources */,
 				DA4A6A811DFB00310047834F /* Book.m in Sources */,
+				DA860EA11DFB2C02001CB645 /* IconsCollectionViewCell.m in Sources */,
 				DA4A6A411DFAF35A0047834F /* AppDelegate.m in Sources */,
 				DA4A6A7E1DFB00220047834F /* BookViewController.m in Sources */,
 				DA4A6A671DFAFA2B0047834F /* MemberStore.m in Sources */,
@@ -434,6 +464,7 @@
 				DA4A6A521DFAF35A0047834F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
