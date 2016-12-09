@@ -7,6 +7,7 @@
 //
 
 #import "WinningViewController.h"
+#import "WinningStore.h"
 
 @interface WinningViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *dancingWinner;
@@ -22,6 +23,11 @@
         self.tabBarItem.title = @"Current Winner";
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [[WinningStore sharedStore] updateWinnerWithMember:self.member];
+    self.winningMember.text = [WinningStore sharedStore].member.firstName;
 }
 
 - (void)viewDidLoad {

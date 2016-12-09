@@ -74,7 +74,7 @@
     if (self) {
         _firstName = [aDecoder decodeObjectForKey:@"firstName"];
         _lastName = [aDecoder decodeObjectForKey:@"lastNumber"];
-        self.thumbnail = [aDecoder decodeObjectForKey:@"thumbnail"];
+        _thumbnail = [aDecoder decodeObjectForKey:@"thumbnail"];
         _numberOfChaptersRead = [aDecoder decodeIntForKey:@"chapters"];
     }
     return self;

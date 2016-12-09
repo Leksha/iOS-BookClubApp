@@ -22,6 +22,7 @@
     [super viewDidLoad];
     _goButton.layer.cornerRadius = 15;
     _goButton.clipsToBounds = YES;
+    _passwordField.secureTextEntry = YES;
     [self.navigationController setNavigationBarHidden:YES];
     // Do any additional setup after loading the view from its nib.
 }

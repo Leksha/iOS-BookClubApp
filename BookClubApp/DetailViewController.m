@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "MemberStore.h"
 #import "IconsCollectionViewController.h"
+#import "WinningStore.h"
 
 @interface DetailViewController ()
 
@@ -50,7 +51,7 @@
     if (self) {
         if (isNew) {
             UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                      target:self action:@selector(save:)];
+                                                                                      target:self action:@selector(complete:)];
             self.navigationItem.rightBarButtonItem = doneItem;
             
             UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
@@ -67,14 +68,11 @@
 }
 
 - (IBAction)complete:(id)sender {
-    self.member.firstName = _firstNameTextField.text;
-    
-    self.member.firstName = _firstNameTextField.text;
-    self.member.lastName = _lastNameTextField.text;
-    self.member.numberOfChaptersRead = [_numberOfChaptersReadTextField.text intValue];
-    self.member.thumbnail = _iconImage.image;
-//    [[MemberStore sharedStore] updateWinnerWithNewMember:self.member];
-    [[MemberStore sharedStore] allMembers];
+    _member.firstName = _firstNameTextField.text;
+    _member.lastName = _lastNameTextField.text;
+    _member.numberOfChaptersRead = [_numberOfChaptersReadTextField.text intValue];
+    _member.thumbnail = _iconImage.image;
+    [WinningStore sharedStore].member = self.member;
     [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
 

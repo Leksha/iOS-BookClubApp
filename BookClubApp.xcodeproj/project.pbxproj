@@ -32,6 +32,7 @@
 		DA860EA21DFB2C02001CB645 /* IconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA860EA01DFB2C02001CB645 /* IconsCollectionViewCell.xib */; };
 		DA860EB31DFB3EC7001CB645 /* WinningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA860EB11DFB3EC7001CB645 /* WinningViewController.m */; };
 		DA860EB41DFB3EC7001CB645 /* WinningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA860EB21DFB3EC7001CB645 /* WinningViewController.xib */; };
+		DA860EB71DFB4BCF001CB645 /* WinningStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DA860EB61DFB4BCF001CB645 /* WinningStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		DA860EB01DFB3EC7001CB645 /* WinningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningViewController.h; sourceTree = "<group>"; };
 		DA860EB11DFB3EC7001CB645 /* WinningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningViewController.m; sourceTree = "<group>"; };
 		DA860EB21DFB3EC7001CB645 /* WinningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinningViewController.xib; sourceTree = "<group>"; };
+		DA860EB51DFB4BCF001CB645 /* WinningStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningStore.h; sourceTree = "<group>"; };
+		DA860EB61DFB4BCF001CB645 /* WinningStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,8 @@
 				DA860EB01DFB3EC7001CB645 /* WinningViewController.h */,
 				DA860EB11DFB3EC7001CB645 /* WinningViewController.m */,
 				DA860EB21DFB3EC7001CB645 /* WinningViewController.xib */,
+				DA860EB51DFB4BCF001CB645 /* WinningStore.h */,
+				DA860EB61DFB4BCF001CB645 /* WinningStore.m */,
 			);
 			name = "Winnig Dashboard";
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA860EB71DFB4BCF001CB645 /* WinningStore.m in Sources */,
 				DA4A6A941DFB0E1C0047834F /* IconsStore.m in Sources */,
 				DA4A6A561DFAF3860047834F /* LoginViewController.m in Sources */,
 				DA4A6A441DFAF35A0047834F /* ViewController.m in Sources */,

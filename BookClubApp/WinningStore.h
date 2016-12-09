@@ -1,17 +1,20 @@
 //
-//  WinningViewController.h
+//  WinningStore.h
 //  BookClubApp
 //
 //  Created by Leksha Ramdenee on 2016-12-09.
 //  Copyright © 2016 Leksha. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "Member.h"
 
-@interface WinningViewController : UIViewController
+@interface WinningStore : NSObject
 
-@property (weak, nonatomic) IBOutlet UILabel *winningMember;
 @property (nonatomic, strong) Member *member;
+
++ (instancetype)sharedStore;
+
+- (void)updateWinnerWithMember:(Member *)member;
 
 @end

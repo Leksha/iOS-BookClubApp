@@ -8,7 +8,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WinningViewController">
             <connections>
-                <outlet property="currentWinner" destination="G4w-hu-Ecq" id="1NP-fU-PHI"/>
                 <outlet property="dancingWinner" destination="bh9-fT-KP9" id="xLr-e6-gXx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="winningMember" destination="IDz-6X-Lip" id="zgX-DC-PDX"/>

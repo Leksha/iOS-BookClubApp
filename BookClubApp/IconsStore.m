@@ -52,7 +52,10 @@
                                [UIImage imageNamed:@"pokemon2"],
                                [UIImage imageNamed:@"pokemon3"],
                                [UIImage imageNamed:@"pokemon5"],
-                               [UIImage imageNamed:@"pokemon6"]
+                               [UIImage imageNamed:@"pokemon6"],
+                               [UIImage imageNamed:@"pokemon7"],
+                               [UIImage imageNamed:@"pokemon8"],
+                               [UIImage imageNamed:@"pokemon9"]
                                ];
         }
     }
