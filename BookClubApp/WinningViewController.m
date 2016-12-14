@@ -30,7 +30,7 @@
     [[WinningStore sharedStore] updateWinnerWithMember:self.member];
     Member *mem = [WinningStore sharedStore].member;
     self.winningMember.text = mem.firstName;
-    self.winningChapters.text = [NSString stringWithFormat:@"%i / %i", mem.numberOfChaptersRead, [Book sharedStore].bookChapters];
+//    self.winningChapters.text = [NSString stringWithFormat:@"%i / %i", mem.numberOfChaptersRead, [Book sharedStore].bookChapters];
 }
 
 - (void)viewDidLoad {
