@@ -17,6 +17,29 @@
 @end
 
 @implementation LoginViewController
+- (void)viewWillAppear:(BOOL)animated {
+    CGPoint passwordCenter = _passwordField.center;
+    CGPoint loginCenter = _loginField.center;
+    
+    passwordCenter.x -= self.view.bounds.size.width;
+    loginCenter.x -= self.view.bounds.size.width;
+    
+    _passwordField.center = passwordCenter;
+    _loginField.center = loginCenter;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [UIView animateWithDuration:0.5 animations:^{
+        CGPoint passwordCenter = _passwordField.center;
+        CGPoint loginCenter = _loginField.center;
+        
+        passwordCenter.x += self.view.bounds.size.width;
+        loginCenter.x += self.view.bounds.size.width;
+        
+        _passwordField.center = passwordCenter;
+        _loginField.center = loginCenter;
+    }];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
